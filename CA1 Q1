@@ -1,0 +1,21 @@
+import java.util.Scanner
+
+fun main(){
+    val reader = Scanner(System.`in`)
+    var value1 = reader.nextInt()
+    var value2 = reader.nextInt()
+    var value3 = reader.nextInt()
+        if(value1>value2){
+            if (value1>value3){
+                println("$value1 is the greatest")
+            }else{
+                println("$value3 is the greatest")
+            }
+        }else{
+            if (value2>value3){
+                println("$value2 is the greatest")
+            }else{
+                println("$value3 is the greatest")
+            }
+        }
+}
