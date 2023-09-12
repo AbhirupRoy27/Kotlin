@@ -1,0 +1,39 @@
+class Student(primaryRollNumber: Int, primaryName: String, primaryFees: Double) {
+    var rollNumber: Int = 0
+    var name: String = ""
+    var fees: Double = 0.0
+
+    // Primary constructor initialization
+    init {
+        rollNumber = primaryRollNumber
+        name = primaryName
+        fees = primaryFees
+    }
+
+    // Secondary constructor
+    constructor(primaryName: String, primaryFees: Double) : this(0, primaryName, primaryFees) {
+        // Secondary constructor delegates to the primary constructor
+    }
+
+    // Display function to print student information
+    fun display() {
+        println("Roll Number: $rollNumber")
+        println("Name: $name")
+        println("Fees: $fees")
+    }
+}
+
+fun main() {
+    // Creating objects using the primary constructor
+    val student1 = Student(101, "Alice", 1500.0)
+
+    // Creating objects using the secondary constructor
+    val student2 = Student("Bob", 2000.0)
+
+    // Displaying student information
+    println("Student 1:")
+    student1.display()
+
+    println("\nStudent 2:")
+    student2.display()
+}
