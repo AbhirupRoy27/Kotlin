@@ -1,0 +1,15 @@
+//NESTED CLASS:
+
+class order{
+    var carID = 101
+    class orderDetails{
+        var Model="I20"
+    }
+}fun main(){
+//     var obj = order()		Instanciate
+//     println(obj.carID)
+println(order.orderDetails().Model)
+println(order().carID)
+//println(order.orderDetails().carID)      ERROR
+}
+
