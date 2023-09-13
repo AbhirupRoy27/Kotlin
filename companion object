@@ -1,0 +1,12 @@
+class mainer{
+    var value :Int = 10
+    companion object {
+        var author =""
+        var MRP: Int = 299
+    }
+}
+fun main(){
+    mainer.author="Jaiku"
+    println("written by "+mainer.author +" and the price is: "+mainer.MRP)
+	println("sold copies:"+ mainer().value)
+}
