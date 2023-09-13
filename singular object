@@ -1,0 +1,15 @@
+object value{
+    val to = mutableListOf("is")
+    fun dataadd(To: String){
+        to.add(To)
+    }
+    fun datarm(To: String){
+        to.remove(To)
+    }
+}
+fun main(){
+    value.dataadd("Name")
+    print(value.to)
+    value.datarm("is")
+    print(value.to)
+}
