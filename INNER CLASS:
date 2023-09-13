@@ -1,0 +1,13 @@
+//INNER CLASS:
+
+class outer(val val1: Int){
+    inner class inner1{
+        val tax=val1*val1
+    }
+}
+fun main() {
+    val obj = outer(10)
+    val obj1 = obj.inner1()
+    println(obj1.tax)
+    
+}
