@@ -11,3 +11,27 @@ fun main() {
     println(obj1.tax)
     
 }
+
+
+// Second example:
+class javas{
+     inner class cl2{
+         fun just(){
+             println("gg")
+         }
+     }
+     companion object{
+         fun hello(){
+             println("hello")
+         }
+     }
+ }
+ object car{
+     fun get()=4
+ }
+ fun main(){
+     javas.Companion.hello()
+     javas().cl2().just()
+     println(car.get())    
+ }
+
