@@ -1,0 +1,25 @@
+abstract class a (
+    val a: Int
+){
+    fun g(){
+        print("Kotlin")
+    }
+    abstract fun fun1()
+}
+
+class bb():a(145) {
+    /*override fun g() {
+    }   this part of the code gives ERROR because of non-open method is overridden.
+     */
+    override fun fun1() {
+        println("hello")
+    }
+}
+
+fun main(){
+    val androidDrawer:a = bb()
+    androidDrawer.fun1()
+    androidDrawer.a
+    androidDrawer.g()
+
+}
