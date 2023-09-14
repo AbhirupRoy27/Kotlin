@@ -1,0 +1,18 @@
+fun check(rec: Boolean) {
+    if (rec) {
+        println("Inside If")
+    } else {
+        print("inside else")
+    }
+}
+fun main() {
+    println("Enter T or F")
+    val a = readln()
+    val b = a.toInt()
+    if(b==1)
+        check(true)
+    else
+        check(false)
+
+
+}
