@@ -1,0 +1,16 @@
+class User(
+    val name3:String
+)
+
+fun remain(user: User?): User? {
+    var name: String? = null
+    println(name+"$user")
+    return null
+}
+
+fun main(){
+    var result:User? = remain(null)
+    val obj1 = User("abhirup")
+    println(obj1.name3)
+    println("${result?.name3}")
+}
