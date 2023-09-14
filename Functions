@@ -1,0 +1,42 @@
+//normal function
+fun first(){
+    val a= 10
+    val b = 20
+    val sum = a + b
+    println(sum)
+}
+fun with_para(value: Int,name: String){                  //Function with parameter
+    println("The passed value by $name is: $value")
+}
+
+fun ret_type():Int{                   //Function with return type
+    val x = 50
+    return x * 2
+}
+
+fun absolute(given: Int):Int{
+    if(given >= 0)
+        return given
+    else
+        return -given
+}
+
+fun n_args(value: Int){
+    println(value)
+}
+
+fun def(vari : Int = 50){
+    println(vari)
+
+}
+
+fun main(){
+    first()                                      //normal function
+    with_para(10,"Ravi")             //argument to the function
+    val e = ret_type()                           //result from a function
+    println(e)
+    val b = absolute(-154)
+    println(b)
+    def(70)
+    n_args(value = 100)                            // named arguments
+}
