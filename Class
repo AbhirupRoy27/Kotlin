@@ -1,0 +1,11 @@
+class jvms(val inter: Int){
+    open fun hello(value: Int):Int{
+        println("given value $inter")
+        return value*inter
+    }
+}
+fun main(){
+    val obj = jvms(500)
+    val result = jvms(obj.hello(2))
+    println(result.hello(2))
+}
