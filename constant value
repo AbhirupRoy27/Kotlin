@@ -1,0 +1,16 @@
+class example(val git:Int){
+    companion object{
+        const val pro = 5
+            }
+    fun value2(give: Int):Int{
+        return give*pro
+    }
+
+}
+fun main(){
+    
+        val obj = example(2)
+        val top = obj.value2(obj.git)
+        println(top)
+ 
+}
