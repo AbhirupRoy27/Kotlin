@@ -1,0 +1,33 @@
+fun main(){
+/*    val list = mutableListOf("hello",
+                      "WORLD",
+                      "hello"               //repeated value ALLOWED
+                        )
+    println(list[0].uppercase()+"\n")
+    var list2 = listOf("ROUSHAN",
+        "CHIRAG",
+        "JAIKU")
+    for (elements in list2)
+    println(elements)
+
+    println("\n"+list+list2)
+
+    var list3 = list - "hello"+ "Abhirup"
+    for(elements in list3){
+        println(elements)
+    }
+*/
+    val map1 = mutableMapOf(1 to "roushan",
+        2 to "chirag",
+        3 to "abhirup")
+    println(map1[1])
+    map1.remove(2)
+    map1.replace(3,"abhirup","chirag")
+    println(map1)
+    map1[4]="rajesh"                //ways to add to map #1
+    map1.put(2,"abhirup")           //#2
+    println(map1.entries)
+    map1.clear()                    //map clear()
+    println(map1)
+
+}
