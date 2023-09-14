@@ -1,0 +1,29 @@
+interface Abhi
+interface bh
+
+class gh :Abhi,bh{
+
+}
+
+open class  hero(
+    open var a: String
+){
+    fun pr(){
+    println(a)
+    }
+}
+
+class b(val x: String): hero("abhi"){
+    override var a = "Roushan"
+    fun pr1(){
+        println(super.a)
+    }
+}
+
+fun main(){
+    val obj = b("abhirup")
+    println(obj.a)
+    obj.pr()
+    obj.pr1()
+    println(obj.x)
+}
