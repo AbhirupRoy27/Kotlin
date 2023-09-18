@@ -1,0 +1,40 @@
+class funs(
+    var name: String,
+    var age: Int
+)
+{
+    var pack: Int = 15000                       //constructor properties
+    var info : String = "$name ($age)"          //access the properties of class funs
+    fun sub(type: String, size: Int): Coffee {
+        println("$type and $size")
+        return Coffee(type , size)      //return to user-defined class
+    }
+    //method call another method.
+    fun fun_call(type: String, size: Int): Coffee{
+        sub(type,size)
+        return Coffee(type,size)        //return to user-defined class
+    }
+}
+//user-defined class
+class Coffee(
+    val type: String,
+    val size: Int
+)
+
+fun main() {
+
+    val obj1 = funs("abhi", 24)
+    val obj2 = funs("rou", 36)
+    obj1.name = "Abhirup"
+    obj1.age = 18
+    obj2.name = "Roushan"
+    obj2.age = 20
+    println(obj1.name)
+    println(obj2.name)
+    obj1.pack = 20000
+    println(obj1.pack)
+    println(obj1.info)
+    val obj3: Coffee = obj1.sub("Hi",1)
+    obj1.fun_call("jobs",45)
+}
+
