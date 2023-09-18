@@ -1,0 +1,18 @@
+class extension_function1(
+    var num3: Int
+) {
+    var num1 :Int =10
+}
+fun extension_function1.function1(value: Int){
+    println("current value of num1 is =$num1")
+    val num2 = value + num1
+    num3 = num3++                       // the elements in the class can be modified
+    println("value passed to the function: $value")
+    println("value from the extension function(num2): $num2"+"and (test) ")
+}
+fun main(){
+    val obj = extension_function1(40)
+    println("value from the class directly ${obj.num1}")
+    obj.function1(50)
+    println(obj.num3)               // the updated value is visible.
+}
