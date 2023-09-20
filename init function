@@ -1,0 +1,16 @@
+class anme(val qual:String,val age:Int,){
+    val qual1:String
+	val age1:Int
+    
+    init {
+    	qual1 = qual
+		age1 = age
+        println("is a $qual1 and he is $age1")
+        println("is a $qual1 and he is $age1")
+    } 
+}
+fun main(args: Array<String>){
+    val o = anme("roushan",18)
+    //val o1= anme("chirag",20)
+   	
+}
