@@ -1,0 +1,26 @@
+//main class
+class test{
+    fun firstTest(
+        item1:Double,
+        item2:Double,
+        tax:Double
+    ):Double{
+        return (item1+item2)+(1.0*tax)
+    }
+}
+
+// to create a unit test file right click on the class and expand the 'go to' option and then,
+// click on test and start writing. the below code.
+
+//test file
+import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Test
+
+class unitTest1 {
+    private val obj1 = test()
+    @Test
+    fun firstTest() {
+        val result = obj1.firstTest(10.00,20.00,0.20)
+        assertEquals(30.2,result)
+    }
+}
