@@ -1,0 +1,18 @@
+class LibItem(val a: String, val b: Int)
+// Define a generic class that holds a library item and its subtype must be Book
+class Lib<T : LibItem>(val item: T) {
+    fun getItemInfo(): String {
+        return "${item.a},\n${item.b}"
+    	}
+    }
+//generic Function with Constrains
+ fun <T> dg(value:T)where T:Number,T:Comparable<T>{
+     println(value)
+ }
+fun main() {
+    val book = LibItem("The Great Gatsby", 1925)
+    val bookLibrary = Lib(book)
+    // Display information about the book
+    println("${bookLibrary.getItemInfo()}")
+    dg(50)
+}
